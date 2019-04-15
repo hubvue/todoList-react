@@ -1,18 +1,17 @@
 import React from "react";
 
-
 let AddTodo = ({addHandle}) => {
     let inputRef = React.createRef();
+
     const submitHandle = (e) => {
         e.preventDefault();
-        
         if(!inputRef.current.value.trim()){
             return;
         }
-        addHandle(inputRef.current.value);
-        
+        addHandle(inputRef.current.value)
         inputRef.current.value = "";
     }
+
     return (
         <form 
             className="top-form"
@@ -23,4 +22,5 @@ let AddTodo = ({addHandle}) => {
         </form>
     )
 }
+
 export default AddTodo;
