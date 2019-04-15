@@ -38,7 +38,8 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 use:[{
                     loader: "babel-loader"
-                }]
+                }],
+                exclude:join(__dirname,"node_modules")
             }
         ]
     },
