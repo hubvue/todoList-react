@@ -4,4 +4,4 @@
 - 第一种：react
 - 第二种：react + redux + react-redux
 - 第三种：react + redux + Context API
-- 第四中：react-Hooks
+- 第四种：react-Hooks
